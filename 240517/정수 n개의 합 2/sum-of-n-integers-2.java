@@ -24,7 +24,7 @@ public class Main {
         for (int i = 1;i<n;i++){
             sum[i] = sum[i-1] + arr[i];
         }
-        int max = sum[m-1];
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < n-m; i++){
             if(sum[i+m]-sum[i] >= max) max = sum[i+m]-sum[i];
 
