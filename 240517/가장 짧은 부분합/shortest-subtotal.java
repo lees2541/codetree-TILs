@@ -25,12 +25,17 @@ public class Main {
         }
         int mir = n;
         int r;
-        for(int i = 1, j = 0;i < n ; i++){
+        for(int i = 1, j = 0 ;i < n ; i++){
+            if(arr[i] >= m){
+                mir = 1;
+                break;
+            }
             if(sum[j]-sum[i-1]>= m){
+                
                 r = j - i+1 ;
                 if (r < mir) mir = r;
                 j = i+1;
-                continue;
+
             }else{
                 if(n-j <= 1){
                     j = i+1;
