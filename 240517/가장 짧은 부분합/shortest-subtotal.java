@@ -26,7 +26,7 @@ public class Main {
         int mir = n;
         int r;
         for(int i = 1, j = 0 ;i < n ; i++){
-            if(arr[i] >= m){
+            if(arr[i-1] >= m){
                 mir = 1;
                 break;
             }
